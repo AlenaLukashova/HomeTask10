@@ -7,7 +7,6 @@ import by.tc.jb24.library.Magazine;
 import by.tc.jb24.library.PrintEdition;
 import by.tc.jb24.library.Library;
 import by.tc.jb24.services.find.FindByTitle;
-//import by.tc.jb24.services.find.FindByPublisher;
 import by.tc.jb24.services.Services;
 import by.tc.jb24.view.PrintAsList;
 import by.tc.jb24.view.PrintAsTable;
@@ -28,10 +27,6 @@ public class Main {
 		Findable match = new FindByTitle("Java Basics");
 		Services findMatcher = new Services();
 		List<PrintEdition> resultUnits = findMatcher.find(myLibrary, match);
-		
-//		Findable match = new FindByPublisher("ABC");
-//		Services findMatcher = new Services();
-//		List<PrintEdition> resultUnits = findMatcher.find(myLibrary, match);
 
 		System.out.println("Number of found results: " + resultUnits.size());
 
